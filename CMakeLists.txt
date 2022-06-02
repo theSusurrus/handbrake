@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 
-set(PICO_SDK_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../pico/pico-sdk)
+set(PICO_SDK_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../pico-sdk)
 
 # Pull in SDK (must be before project)
 include(pico_sdk_import.cmake)
@@ -23,6 +23,7 @@ add_executable(handbrake)
 target_sources(handbrake PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}/main.c
         ${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.c
+        ${CMAKE_CURRENT_LIST_DIR}/handbrake_driver.c
         )
 
 # Make sure TinyUSB can find tusb_config.h

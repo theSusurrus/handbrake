@@ -1,0 +1,15 @@
+#ifndef _BUTTON_DRIVER_H
+#define _BUTTON_DRIVER_H
+
+typedef enum {
+  HANDBRAKE_ACTION_NONE,
+  HANDBRAKE_ACTION_UP,
+  HANDBRAKE_ACTION_DOWN,
+  HANDBRAKE_ACTION_BRAKE,
+  HANDBRAKE_ACTION_NUM
+} HANDBRAKE_ACTION;
+
+void init_buttons();
+HANDBRAKE_ACTION get_handbrake_action();
+
+#endif /* _BUTTON_DRIVER_H */
