@@ -23,6 +23,7 @@ add_executable(handbrake)
 target_sources(handbrake PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}/main.c
         ${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.c
+        ${CMAKE_CURRENT_LIST_DIR}/button_driver.c
         )
 
 # Make sure TinyUSB can find tusb_config.h
