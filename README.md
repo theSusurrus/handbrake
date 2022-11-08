@@ -1,2 +1,3 @@
-This is a copy of the hid_composite example from TinyUSB (https://github.com/hathach/tinyusb/tree/master/examples/device/hid_composite)
-showing how to build with TinyUSB when using the Raspberry Pi Pico SDK
+# Handbrake
+
+This is a simple program for Raspberry Pico that acts as a two button keyboard with a mode switch. It's intended for use in a DIY simracing handbrake/sequential shifter.
